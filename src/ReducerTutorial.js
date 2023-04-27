@@ -6,8 +6,10 @@ const reducer= (state, action)=>{
   switch(action.type){
 case 'INCREMANT':
   return{
-count: state.count+1,state.showText:true
+count: state.count+1, showText: state.showText
   }
+  case 'toggle':
+    return{count: state.count , showText: !state.showText}
 default:
 return state
   }
@@ -19,7 +21,12 @@ function ReducerTutorial() {
 
   return (
     <div> 
-    
+    {state.count}
+    <button onClick={()=>{dispatch({type:'INCREMANT'}); dispatch({type:'toggle'})}}>
+
+      Clicke me
+    </button>
+    <h1>{state.showText&& <p>show Text</p>}</h1>
     </div>
   )
 }
