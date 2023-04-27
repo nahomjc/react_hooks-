@@ -21,7 +21,7 @@ function ReducerTutorial() {
 
   return (
     <div> 
-    {state.count}
+   <h1>{state.count}</h1> 
     <button onClick={()=>{dispatch({type:'INCREMANT'}); dispatch({type:'toggle'})}}>
 
       Clicke me
