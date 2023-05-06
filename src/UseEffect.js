@@ -14,7 +14,7 @@ const UseEffect = () => {
         }
         fetchData()
     },[])
-
+//acessing api
 
     if(!data){
         return(<h1>Loading...</h1>)
