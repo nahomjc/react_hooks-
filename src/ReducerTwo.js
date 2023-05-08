@@ -13,7 +13,7 @@ const ReducerTwo = () => {
 
         <h1>{state.money}</h1>
         <div><button onClick={()=>dispatch({type:'ride'})}> Ride</button>
-        <button onClick={()=>dispatch({type:'fuel'})}> Ride</button></div>
+        <button onClick={()=>dispatch({type:'fuel'})}> Fuel</button></div>
     </div>
   )
 }
