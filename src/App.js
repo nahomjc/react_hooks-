@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <nav>
+      <Link to={'/'}><h3>Home</h3></Link> 
       <Link to={'/ReducerTwo'}><h3>ReducerTwo</h3></Link>  
       <Link to={'/InputRef'}><h3>InputRef</h3></Link>  
       <Link to={'/UseLayoutEffect'}><h3>UseLayoutEffect</h3></Link>   
